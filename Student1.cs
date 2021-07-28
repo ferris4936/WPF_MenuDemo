@@ -14,7 +14,7 @@ namespace WPF_MenuDemo
         public string Major { get; set; }
         public double Average { get; private set; }
 
-        private List<int> scores;
+        private List<Assignment> scores;
 
         public List<Assignment> Scores
         {
@@ -56,7 +56,7 @@ namespace WPF_MenuDemo
             FirstName = firstName;
             LastName = lastName;
             Major = maj;
-            scores = new List<int>();
+            scores = new List<Assignment>();
 
         }
 
@@ -72,7 +72,7 @@ namespace WPF_MenuDemo
         /// <param name="score3">Third score</param>
         /// <param name="maj"></param>
         public Student1(string sID, string firstName, string lastName,
-            string maj, List<int> scores)
+            string maj, List<Assignment> scores)
             : this(sID, firstName, lastName, maj)    
         {
             this.scores = scores;

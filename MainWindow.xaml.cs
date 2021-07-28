@@ -43,8 +43,6 @@ namespace WPF_MenuDemo
             assign.Score = int.Parse(txbScore.Text);
             tempScores.Add(assign);
             lbScores.Items.Refresh();
-
-
         }
     }
 }
